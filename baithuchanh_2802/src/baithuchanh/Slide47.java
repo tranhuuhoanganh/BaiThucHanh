@@ -5,23 +5,21 @@ import java.util.Scanner;
 public class Slide47 {
 
 	public static void main(String[] args) {
-		float sum=0,number;
-		
+		int  sum=0,number;
+		String a = "";
 		Scanner sc = new Scanner(System.in);
-		
-		
+
 		do {
 			System.out.print("nhap so: ");
-			number = sc.nextFloat();
+			number = sc.nextInt();
 			sum +=number;
-			if(sum>100) {break;}
 			
-		}while(number>0);
-		
-		System.out.println("sum = " +sum);
+			a += number + "+";
+		}while(sum<100);
+		System.out.print(a);
+		System.out.println( "="  +sum);
 		sc.close();
 
-		
 	}
 
 }
