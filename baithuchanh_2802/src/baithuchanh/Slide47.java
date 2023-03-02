@@ -12,12 +12,13 @@ public class Slide47 {
 		do {
 			System.out.print("nhap so: ");
 			number = sc.nextInt();
-			sum +=number;
+			
 			
 			a += number + "+";
+			sum +=number;
 		}while(sum<100);
-		System.out.print(a);
-		System.out.println( "="  +sum);
+		
+		System.out.println( "tong = " +a.substring(0,a.length()-2) + " = " +sum);
 		sc.close();
 
 	}
