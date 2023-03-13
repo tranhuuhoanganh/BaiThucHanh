@@ -5,6 +5,7 @@ public class Slide75 {
 
 	public static void main(String[] args) {
 		
+
 		int i,j;
 		int n,m;
 		int tong=0;
@@ -41,8 +42,19 @@ public class Slide75 {
 			}
 				System.out.println("\n");
 		}
-		
-		
+                
+                // tổng các số chẵn
+                for(i=0;i<n;i++) 
+		{
+			for(j=0;j<m;j++)
+			{
+                            if (arr[i][j]%2==0) {
+                                tong+=arr[i][j];
+                            }
+                        }
+                        
+                }
+                System.out.println("tong = " +tong);
 
 	}
 
