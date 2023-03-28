@@ -1,10 +1,12 @@
-package baithuchanh;
+/*
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
+ * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
+ */
+package baithuchanhlab3;
 import java.util.Scanner;
 
 public class Student {
-
-	
-		    String hoten;
+     String hoten;
 		    int tuoi, namsinh;
 		    String gioitinh;
 		    public void nhapthongtin(){
@@ -15,7 +17,7 @@ public class Student {
 		        namsinh=sc.nextInt();
 		        System.out.print("\nNhap gioi tinh :");
 		        gioitinh=sc.next();
-		        sc.close();
+		        
 		    }
 		    public void tinhtuoi()
 		    {
@@ -26,7 +28,6 @@ public class Student {
 		    {
 		        System.out.printf("\nSinh vien tren co thong tin la:\nHo va ten: %s \nGioi tinh: %s \nNam sinh: %d \nTuoi: %d ", hoten, gioitinh, namsinh, tuoi );
 		    }
-		
-	}
-
+    }
+    
 

@@ -1,6 +1,6 @@
-package baithuchanh;
+package BaiThucHanhLab3;
 import java.util.Scanner;
-public class HinhTron {
+public class hinhtron {
 
 	
 		final float Pi = 3.14f;
