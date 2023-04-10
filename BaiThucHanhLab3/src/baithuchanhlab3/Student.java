@@ -1,33 +1,31 @@
-/*
- * Click nbfs://nbhost/SystemFileSystem/Templates/Licenses/license-default.txt to change this license
- * Click nbfs://nbhost/SystemFileSystem/Templates/Classes/Class.java to edit this template
- */
+
 package baithuchanhlab3;
 import java.util.Scanner;
 
 public class Student {
-     String hoten;
-		    int tuoi, namsinh;
-		    String gioitinh;
-		    public void nhapthongtin(){
-		        Scanner sc = new Scanner(System.in);
-		        System.out.print("Nhap ho va ten :");
-		        hoten=sc.nextLine();
-		        System.out.print("\nNhap so nam sinh :");
-		        namsinh=sc.nextInt();
-		        System.out.print("\nNhap gioi tinh :");
-		        gioitinh=sc.next();
-		        
-		    }
-		    public void tinhtuoi()
-		    {
-		        tuoi = 2023 - namsinh;
-		    }
-
-		    public void inthongtin()
-		    {
-		        System.out.printf("\nSinh vien tren co thong tin la:\nHo va ten: %s \nGioi tinh: %s \nNam sinh: %d \nTuoi: %d ", hoten, gioitinh, namsinh, tuoi );
-		    }
+    String hoten,gioitinh;
+        int namsinh,tuoi;
+        
+        public static void thongTin(String hoten,int namsinh ,String gioitinh) 
+        {
+        Scanner sc = new Scanner(System.in);
+        System.out.print("Nhap ho va ten :");
+        hoten=sc.nextLine();
+        System.out.print("\nNhap so nam sinh :");
+        namsinh=sc.nextInt();
+        System.out.print("\nNhap gioi tinh :");
+        gioitinh=sc.nextLine();
+        }
+    
+        public  void tinhTuoi()
+        { 
+            tuoi = 2023 - namsinh;
+        }
+        
+        public void inThongTin() 
+        {
+        System.out.printf("\nTên: %s \nTuổi: %d \nGiới tính: %s" ,hoten, tuoi, gioitinh);       
+        }
     }
     
 
