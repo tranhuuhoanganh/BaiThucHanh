@@ -6,23 +6,27 @@ import java.util.Scanner;
 
 public class HinhTruTron extends HinhTron{
     
-    public float chieucao;
-    public HinhTruTron()
-    {
-        ten = "tru tron";
-    }
-    public void nhapChieuCao()
-    {
-        nhapBanKinh();
-        Scanner sc = new Scanner(System.in);
-        System.out.print("nhap chieu cao: ");
-        chieucao = sc.nextFloat();
-    }
+    private float chieucao;
     
-    public void tinhTheTich()
-    {
-        tinhDienTich();
-        thetich = dientich * chieucao;
+    public float getChieuCao() {
+        return chieucao;
     }
-    
+
+    public void setChieuCao(float chieucao) {
+        this.chieucao = chieucao;
+    }
+
+    public HinhTruTron(){
+        super.setTen("Hinh Tru");
+    }
+
+    public void NhapChieuCao(Scanner sc) {
+        System.out.print("Nhap chieu cao: ");
+        setChieuCao(sc.nextFloat());
+    }
+
+    public void tinhTheTich() {
+        float theTich = super.getPi() * (float) Math.pow(super.getBanKinh(), 2) * chieucao;
+        super.setTheTich(theTich);
+    }
 }

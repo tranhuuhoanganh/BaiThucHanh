@@ -7,15 +7,13 @@ import java.util.Scanner;
 public class HinhVuong extends HinhChuNhat{
     
     
-    public HinhVuong()
-    {
-        ten = "vuong";
+    public HinhVuong(){
+        super.setTen("Hinh Vuong");
     }
-    
-    public void nhapCanh()
-    {
-        Scanner sc = new Scanner(System.in);
-        System.out.print("nhap canh hinh vuong: ");
-        chieudai=chieurong = sc.nextFloat();
+
+    public void NhapCanh(Scanner sc) {
+        System.out.print("Nhap canh: ");
+        super.setDai(sc.nextFloat());
+        super.setRong(super.getDai()); 
     }
 }
