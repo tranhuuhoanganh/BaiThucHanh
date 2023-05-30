@@ -13,7 +13,7 @@ public class Student{
         System.out.print("Ho ten: ");
         st.FullName = sc.nextLine();
         System.out.print("Nhap tuoi: ");
-        st.Age = Integer.parseInt(sc.nextLine());
+       st.Age = Integer.parseInt(sc.nextLine());
     }
 
     //List
